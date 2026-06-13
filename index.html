@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Snake - Premium Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1 class="neon-text">NEON SNAKE</h1>
+            <div class="stats">
+                <div class="stat-box">
+                    <span class="label">SCORE</span>
+                    <span id="score" class="value">000</span>
+                </div>
+                <div class="stat-box">
+                    <span class="label">LEVEL</span>
+                    <span id="level" class="value">01</span>
+                </div>
+                <div class="stat-box">
+                    <span class="label">HIGH SCORE</span>
+                    <span id="high-score" class="value">000</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="canvas-wrapper">
+            <canvas id="gameCanvas"></canvas>
+            
+            <!-- Game Over Overlay -->
+            <div id="game-over" class="overlay hidden">
+                <h2 class="neon-text-alt">GAME OVER</h2>
+                <p>FINAL SCORE: <span id="final-score">0</span></p>
+                <button id="restart-btn">RESTART SYSTEM</button>
+            </div>
+
+            <!-- Start Screen Overlay -->
+            <div id="start-screen" class="overlay">
+                <h2 class="neon-text">READY?</h2>
+                <p>Use ARROWS or WASD to navigate</p>
+                <button id="start-btn">BOOT UP</button>
+            </div>
+        </div>
+
+        <div class="power-up-indicator">
+            <span id="active-power-up"></span>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 CYBERPUNK SYSTEMS INC.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
